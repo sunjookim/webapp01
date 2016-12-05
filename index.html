@@ -168,8 +168,16 @@
             } );    
          });
 
-       
+       var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644},
+                zoom: 8
+            });
+        }
     </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBigZ1ZnOcxWxl56N4a0isMahEn2Q0EO-w&callback=initMap">
+        </script>
     <style type="text/css">
        @font-face {
             font-family: Font1;
@@ -348,7 +356,8 @@
             <p class="center"><a href="#" data-icon="search" id="target_nine_location">아홉가지약속치과 위치 표시</a></p>
             <p class="center"><a href="#" data-icon="search" id="target_nam_location">남스부부치과 위치 표시</a></p>
             <!-- <div id="map_canvas" class="map_style pm"></div> -->
-            <!-- <div id="map_canvas" class="map_style"></div> -->
+            <div id="map_canvas" class="map_style"></div>
+            <!--
             <script type="text/javascript">
              var map;
         function initMap() {
@@ -357,9 +366,9 @@
                 zoom: 8
             });
         }
-        </script>
+        </script> 
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBigZ1ZnOcxWxl56N4a0isMahEn2Q0EO-w&callback=initMap">
-        </script>
+        </script> -->
             <br/><br/><br/>
         </div> 
     </div> 
