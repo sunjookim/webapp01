@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script language='javascript'> 
+window.setTimeout('window.location.reload()',60000); //60초마다 새로고침
+</script>
 <!-- video -->
 <link href="https://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
@@ -34,7 +37,6 @@
 
    <script type="text/javascript">
          $(document).ready(function() {
-            initialize();
              //초기 위치 설정(문치과)
             var StartLatLng = new google.maps.LatLng(36.818877, 127.157875);             
             $('#map_canvas').gmap({"center" : StartLatLng , "zoom" : 16}  );
@@ -169,13 +171,6 @@
             } );    
          });
 
-       var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.397, lng: 150.644},
-                zoom: 8
-            });
-        }
 
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBigZ1ZnOcxWxl56N4a0isMahEn2Q0EO-w&callback=initMap">
