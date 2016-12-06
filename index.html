@@ -251,7 +251,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="timer = setTimeout('auto_reload()',5000);">
    <div data-role="page" id="main" class="font1_style"> 
         <div class="header">
             <h1 text-aling="center"><span style="color:red;">한</span><span style="color:blue;">건</span><span style="color:green;">강</span> : 한기인의 건강을 챙기자</h1>
@@ -352,6 +352,11 @@
             </ul> 
             <br/><br/><br/>
             <h2>지도</h2>
+            <script> var timer = null;
+            function auto_reload()
+            {
+             top.location.href = 'Enter your URL destination here';
+            } </script>
             <p class="center"><a href="#" data-icon="search" id="target_moon_location">문치과 위치 표시</a></p>
             <p class="center"><a href="#" data-icon="search" id="target_nine_location">아홉가지약속치과 위치 표시</a></p>
             <p class="center"><a href="#" data-icon="search" id="target_nam_location">남스부부치과 위치 표시</a></p>
