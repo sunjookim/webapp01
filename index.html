@@ -52,7 +52,6 @@
 
             //문치과 <위치표시> 버튼 처리      
             $("#target_moon_location").click(function() { 
-                history.go(0);
                         var latlng = new google.maps.LatLng(36.818877, 127.157875)
                         var markerBlue = "http://www.google.com/intl/en_us/mapfiles/ms/icons/blue-dot.png";
                         $("#map_canvas").gmap("get", "map").panTo(latlng); 
