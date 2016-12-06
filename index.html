@@ -33,6 +33,7 @@
     <script src="./ui/jquery.ui.map.extensions.js" type="text/javascript"></script>
 
    <script type="text/javascript">
+   try {google;} catch (e){location.reload();}
          $(document).ready(function() {
              //초기 위치 설정(문치과)
             var StartLatLng = new google.maps.LatLng(36.818877, 127.157875);             
@@ -353,9 +354,6 @@
             </ul> 
             <br/><br/><br/>
             <h2>지도</h2>
-            <script type="text/javascript">
-                try {google;} catch (e){location.reload();}
-            </script>
             <p class="center"><a href="#" data-icon="search" id="target_moon_location">문치과 위치 표시</a></p>
             <p class="center"><a href="#" data-icon="search" id="target_nine_location">아홉가지약속치과 위치 표시</a></p>
             <p class="center"><a href="#" data-icon="search" id="target_nam_location">남스부부치과 위치 표시</a></p>
